@@ -1,0 +1,17 @@
+fixedDelay: 100000
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: sensor-topic
+          contentType: "application/*+avro"
+confluent:
+  schemaregistry:
+    endpoint: http://localhost:8081
+server:
+  port: 0
+logging:
+  level:
+    org.springframework.integration: DEBUG

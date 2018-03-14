@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+#      schema:
+#        avro:
+#          readerSchema: "com.example.Sensor"
+      bindings:
+        input:
+         destination: sensor-topic
+server:
+  port: 0

@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    stream:
+      schemaRegistryClient:
+        endpoint: http://localhost:8990
+      bindings:
+        output:
+          destination: sensor-topic
+          contentType: "application/*+avro"
+server:
+  port: 0
+logging:
+  level:
+    org.springframework.integration: DEBUG
