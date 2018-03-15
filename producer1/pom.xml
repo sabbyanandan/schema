@@ -78,7 +78,7 @@
 							<goal>idl-protocol</goal>
 						</goals>
 						<configuration>
-							<sourceDirectory>src/main/avro</sourceDirectory>
+							<sourceDirectory>src/main/resources/avro</sourceDirectory>
 						</configuration>
 					</execution>
 				</executions>

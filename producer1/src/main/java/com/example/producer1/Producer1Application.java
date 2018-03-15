@@ -33,12 +33,12 @@ public class Producer1Application {
 	@RequestMapping(value = "/messages", method = RequestMethod.POST)
 	public String sendMessage() {
 		source.output().send(MessageBuilder.withPayload(randomSensor()).build());
-		return "ok, have fun!";
+		return "ok, have fun with v1 payload!";
 	}
 
 	private Sensor randomSensor() {
 		Sensor sensor = new Sensor();
-		sensor.setId(UUID.randomUUID().toString());
+		sensor.setId(UUID.randomUUID().toString() + "-v1");
 		sensor.setAcceleration(random.nextFloat() * 10);
 		sensor.setVelocity(random.nextFloat() * 100);
 		sensor.setTemperature(random.nextFloat() * 50);
