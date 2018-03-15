@@ -8,6 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
+        <module>registry</module>
         <module>producer1</module>
         <module>producer2</module>
         <module>consumer</module>
